@@ -12,7 +12,7 @@ class ProntuarioDAO {
         try {
             $sql = "INSERT INTO "
                 . "prontuario(id, numero, dataCriacao, ativo, relatorioMedico, MedicoID, PacienteID) "
-                . "VALUES(id:,:numero,:dataCriacao,:ativo,:relatorioMedico, :MedicoID, :PacienteID)";
+                . "VALUES(id:,:numero,:dataCriacao,:ativo,:relatorioMedico, :MedicoID, :PacienteID) ";
             
             $stmt = $this->pdo->prepare( $sql );
             $stmt->bindValue( ":numero", $ProntuarioDTO->getNumero() );
@@ -48,7 +48,7 @@ class ProntuarioDAO {
 
     public function findAll() {
         try {
-            $sql = "SELECT * FROM prontuario";
+            $sql = "SELECT * FROM prontuario ";
             $stmt = $this->pdo->prepare( $sql );
             $stmt->execute();
             $medico = $stmt->fetchAll( PDO::FETCH_ASSOC );

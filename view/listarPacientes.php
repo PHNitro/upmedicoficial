@@ -15,6 +15,7 @@
             border-collapse: collapse;
             text-align: center;
         }
+
     </style>
 </head>
 
@@ -26,7 +27,7 @@
                         <th>Nome</th>
                         <th>Nascimento</th>
                         <th>Telefone</th>
-                        <th>email</th>
+                        <th>Email</th>
                         <th>Situação</th>
                         <th>Excluir</th>
                         <th>Editar</th>
@@ -47,7 +48,7 @@
                 <td><?=$paciente["situacao"]?></td>
                 
                 <td><a href="../controller/excluirPacienteController.php?id=<?=$paciente["id"]?>"><i class='fa-solid fa-trash-can'></a></i></td>
-                <td><a href="../view/formAlterarPaciente.php?id=<?=$paciente["id"]?>"><i class='fa-solid fa-pen-to-square'></a></i></td>
+                <td><a href="../view/formAlterarPaciente.php?id=<?=$paciente["id"]?>"><i class='fa-solid fa-pen-to-square' style="color: red"; ></a></i></td>
                 </tr>
             <?php
             }

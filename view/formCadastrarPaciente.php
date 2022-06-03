@@ -5,40 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cadastrarPaciente.css">
     <title>Document</title>
-    <style>
-        body{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            min-height: 90vh;
-        }
-
-        #formulario{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        form{
-            display: flex;
-            flex-direction: column;
-            width: fit-content;
-            justify-content: center;
-            align-items: center;
-        }
-
-        input, select{
-            margin-bottom: 13px;
-            width: 300px;
-            height: 30px;
-        }
-
-        input[type="submit"]{
-            width: 100px;
-        }
-    </style>
 </head>
 <body>
     <div id="formulario">

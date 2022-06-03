@@ -31,20 +31,20 @@ echo "      <th>Password</th>";
 echo "      <th>Especialidade</th>";
 echo "      <th class='text-center'>Excluir</th>";
 echo "      <th class='text-center'>Editar</th>";
-echo "  </tr>";
+echo "  </tr>"; 
 echo "</thead>";
 echo "<tbody>";
 foreach ( $medicos as $medico ) {
     echo "<tr>";
     echo "  <td> {$medico["nome"]}</td>";
-    echo "  <td>", formatarCrm( $medico["crm"] ), "</td>";
+    echo "  <td>", ( $medico["crm"] ), "</td>";
     echo "  <td class='text-center'> ", date( "d/m/Y", strtotime( $medico["datanascimento"] ) ), "</td>";
     echo "  <td>", $medico["especialidade"] == "cg" ? "Cirurgia Geral" : "Clínica Médica", "</td>";
     echo "  <td> {$medico["celular"]} </td>";
     echo "  <td> {$medico["email"]} </td>";
     echo "  <td> {$medico["crm"]} </td>";
-    echo "  <td align='center'><a href='../controller/admin/excluirMedicoController.php?id={$medico["id"]}'><i class='fa-solid fa-trash-can'></a></i></td>";
-    echo "  <td align='center'><a href='../controller/admin/alterarMedicoController.php?id={$medico["id"]}&&'><i class='fa-solid fa-pen-to-square'></a></i></td>";
+    echo "  <td align='center'><a href='../controller/excluirMedicoController.php?id={$medico["id"]}'><i class='fa-solid fa-trash-can'></a></i></td>";
+    echo "  <td align='center'><a href='../controller/alterarMedicoController.php?id={$medico["id"]}&&'><i class='fa-solid fa-pen-to-square'></a></i></td>";
     echo "</tr>";
 }
 echo "</tbody>";

@@ -13,5 +13,5 @@ $medicacaoDTO->setdescricao( $descricao );
 $medicacaoDAO = new MedicacaoDAO();
 
 if ( $medicacaoDAO->update( $medicacaoDTO ) ) {
-    header( "Location: ../view/listarProntuarios.php" );
+    header( "Location: ../view/listarProntuario.php" );
 }

@@ -1,7 +1,7 @@
 <?php
 require_once 'conexao/Conexao.php';
 
-class MedicaoDAO {
+class MedicacaoDAO {
     private $pdo;
 
     public function __construct() {

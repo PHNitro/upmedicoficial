@@ -47,7 +47,7 @@
                 </div>
                 <div class="form-group">
                     <label class="col-md-1 control-label">Data de Nascimento: </label>
-                    <input id="" name = "datanascimento" type="date" class="form-control" placeholder="sua data de nascimento" required="" maxlength="100">
+                    <input id="" name = "datanascimento" type="date" class="form-control" placeholder="data de nascimento" required="" maxlength="100">
                 </div>
                 <div class="form-group">
                     <label class="col-md-1 control-label">Celular: </label>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="form-group">
                     <label class="col-md-1 control-label">E-mail: </label>
-                    <input id="crm or email" name = "email" type="text" class="form-control" placeholder="sua CRM ou @email" maxlength = "255" required="">
+                    <input id="email" name = "email" type="text" class="form-control" placeholder="email" maxlength = "255" required="">
                 </div>
                 <div class="form-group">
                     <label class="col-md-1 control-label">Senha: </label>
