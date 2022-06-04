@@ -2,16 +2,14 @@
 <html>
 <head>
 
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Clínica UPMedic | Faça seu cadastro</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-
-    <link href="/css/animate.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/formPadrao.css">
+    <link rel="stylesheet" href="../lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/formPadrao.css">
+    <link rel="shortcut icon" href="/image/iconeblack.png">
+    <script src="../lib/fontawesome/js/all.min.js"></script>
 
 </head>
 

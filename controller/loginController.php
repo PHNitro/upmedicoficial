@@ -17,7 +17,7 @@ $erro[3] = "<h1>Não tem cadastro</h1>";
 
 $usuario = $medicoDAO->logar($medicoDTO);
     if(!empty($usuario)){
-        header("Location: ../indexup.php?msg={$erro[2]}");
+        header("Location: /view/indexup.php?msg={$erro[2]}");
     }else{
-        header("Location: ../indexup.php?msg={$erro[3]}");
+        header("Location: /view/indexup.php?msg={$erro[3]}");
     }

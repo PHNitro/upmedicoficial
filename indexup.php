@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="lib/bootstrap-5.1.3/css/bootstrap.min.css">
-  <script src="lib/bootstrap-5.1.3/js/bootstrap.min.js"></script>
+  <title>UPMedic | Página Principal</title>
+  <link rel="stylesheet" href="/lib/fontawesome/css/all.min.css">
+  <script src="/lib/fontawesome/js/all.min.js"></script>
   <style>
     html,
-    body {
+    *{
       height: 100%;
     }
 
