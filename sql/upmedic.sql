@@ -89,11 +89,11 @@ CREATE TABLE `medico` (
   `nome` varchar(80) NOT NULL,
   `datanascimento` varchar(45) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `password` varchar(100) NOT NULL
+  `password` varchar(100) NOT NULL,
   `cpf` varchar(11) NOT NULL,
   `crm` varchar(45) NOT NULL,
   `celular` varchar(14) NOT NULL,
-  `especialidade` varchar(45) NOT NULL,
+  `especialidade` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -104,9 +104,10 @@ CREATE TABLE `medico` (
 
 CREATE TABLE `medicos_especialidades` (
   `medicos_id` int(11) NOT NULL,
-  `especialidade_id` int(11) NOT NULL
-  `clinica medica` varchar(45) NOT NULL
-  `especialidade_id` int(11) NOT NULL
+  `especialidade_id` int(11) NOT NULL,
+  `clinico geral` varchar(45) NOT NULL,
+  `cirurgiao geral` varchar(45) NOT NULL
+
 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -121,9 +122,9 @@ CREATE TABLE `paciente` (
   `nome` varchar(80) NOT NULL,
   `data_nascimento` date NOT NULL,
   `telefone` varchar(11) NOT NULL,
-  `email` varchar(255) DEFAULT NULL
+  `email` varchar(255) DEFAULT NULL,
   `situacao` char(1) NOT NULL,
-  `cpf` varchar(45) DEFAULT NULL
+  `cpf` varchar(45) DEFAULT NULL,
   `cep` varchar(45) DEFAULT NULL
 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

@@ -18,14 +18,12 @@
 
     </style>
 </head>
-
-
 <body>
     <div class="container mt-3">
                     <table>
                         <tr>
                         <th>Nome</th>
-                        <th>Nascimento</th>
+                        <th>Data de Nascimento</th>
                         <th>Telefone</th>
                         <th>Email</th>
                         <th>Situação</th>

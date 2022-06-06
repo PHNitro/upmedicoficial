@@ -8,7 +8,7 @@
     <title>Clínica UPMedic | Faça seu cadastro</title>
     <link rel="stylesheet" href="../lib/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../css/formPadrao.css">
-    <link rel="shortcut icon" href="/image/iconeblack.png">
+    <link rel="shortcut icon" href="/image/logoatras.png">
     <script src="../lib/fontawesome/js/all.min.js"></script>
 
 </head>
@@ -17,12 +17,12 @@
     <div class="middle-box text-center loginscreen animated fadeInDown">
         <div class="m-b-sm">
             <center>
-                <img alt="image" class="img-circle img-responsive" src="/image/pngwing.com.png"
+                <img alt="image" class="img-circle img-responsive" src="/image/uplogo.png"
                                                      style="width: 180px">
             </center>
-        </div>
-        <div>
+           <div>
             <center>
+            <div>
             <h3>Faça seu Cadastro</h3>
             <br>
             <p>Clínica UPMedic</p>
@@ -79,5 +79,8 @@
                 <button type="button" onClick="history.go(-1)" class="btn btn-warning block full-width m-b">Retornar</button>
             </form>
             <p class="m-t"> <small>Cadastro do Médico</small> </p>
+           </div>
+        </div>
+   </div>
 </body>
 </html>

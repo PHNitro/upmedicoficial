@@ -72,7 +72,7 @@
     <link rel="stylesheet" href="/dao/ProntuarioDAO.php">
     <section>
       <div class="load">
-         <h2 class="text-dark font-weight-bold">Aguarde...</h2>
+         <h2 class="text-dark font-weight-bold">Aguarde</h2>
       </div>
     </section>
   </div>

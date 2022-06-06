@@ -2,23 +2,28 @@
 require_once '../dto/MedicoDTO.php';
 require_once '../dao/MedicoDAO.php';
 
-$idmedico = $_POST["ID"];
+$id = $_POST["ID"];
 $nome = $_POST["nome"];
-$cpf = $_POST["cpf"];
-$crm = $_POST["crm"];
+$data = $_POST["datanascimento"];
 $email = $_POST["email"];
 $password = $_POST["password"];
+$cpf = $_POST["cpf"];
+$crm = $_POST["crm"];
+$especialidade = $_POST["especialidade"];
 
 $medicoDTO = new MedicoDTO();
-$medicoDTO->setId ( $id );
+$medicoDTO->setId( $id );
 $medicoDTO->setNome( $nome );
-$medicoDTO->setcpf( $cpf );
-$medicoDTO->setcrm( $crm );
+$medicoDTO->setData( $data );
 $medicoDTO->setEmail( $email );
-$medicoDTO->setpassword( $password );
+$medicoDTO->setPassword( $password );
+$medicoDTO->setCpf( $cpf );
+$medicoDTO->setCrm( $crm );
+$medicoDTO->setCpf( $especialidade );
+
 
 $medicoDAO = new MedicoDAO();
 
 if ( $medicoDAO->update( $medicoDTO ) ) {
-    header( "Location: ../view/formAlterarMedico.html" );
+    header( "Location: ../view/formAlterarMedico.php" );
 }
